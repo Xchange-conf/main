@@ -9,22 +9,13 @@
 # General
 --------------------------------------------------------------*/
 body {
-  font-family: "Open Sans", sans-serif;
-  color: #fff;
+  font-family: "Basis Grotesque Pro", Medium Italic;
+  color: #000000;
   background: url("../img/bg.jpg") top center no-repeat;
   background-size: cover;
   position: relative;
 }
 
-body::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  background: rgba(49, 71, 89, 0.6);
-}
 
 @media (min-width: 1024px) {
   body {
@@ -33,54 +24,32 @@ body::before {
 }
 
 a {
-  color: #24b7a4;
+  color: #ffffff;
   text-decoration: none;
 }
 
 a:hover {
-  color: #36d8c3;
+  color: #000000;
   text-decoration: none;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Raleway", sans-serif;
+  font-family: "Basis Grotesque Pro", Medium Italic;
+}
+
+
+logo{
+    position: relative;
 }
 
 #main {
   position: relative;
 }
 
-/*--------------------------------------------------------------
-# Back to top button
---------------------------------------------------------------*/
-.back-to-top {
-  position: fixed;
-  visibility: hidden;
-  opacity: 0;
-  right: 15px;
-  bottom: 15px;
-  z-index: 996;
-  background: #24b7a4;
-  width: 40px;
-  height: 40px;
-  border-radius: 50px;
-  transition: all 0.4s;
-}
-
-.back-to-top i {
-  font-size: 28px;
-  color: #fff;
-  line-height: 0;
-}
-
-.back-to-top:hover {
-  background: #2ed6c0;
-  color: #fff;
-}
-
-.back-to-top.active {
-  visibility: visible;
-  opacity: 1;
+.image-wrap {
+    height: 100%;
+    max-width: 100%;
+    object-fit: cover;
 }
 
 /*--------------------------------------------------------------
@@ -95,16 +64,31 @@ h1, h2, h3, h4, h5, h6 {
 
 #header h1 {
   margin: 0 0 10px 0;
-  font-size: 48px;
+  font-size: 25px;
   font-weight: 700;
   line-height: 56px;
-  color: #fff;
+  font-style: italic;
+  color: #1335f1;
 }
 
+#header .logo {
+  margin-bottom: 80px;
+  width: 100px;
+}
 #header h2 {
-  color: #eee;
+  color: 000000;
   margin-bottom: 40px;
-  font-size: 22px;
+  font-size: 15px;
+}
+
+#header h5 {
+  color: #808080;
+  font-size: 15px;
+}
+
+#header h6 {
+  color: #808080;
+  font-size: 15px;
 }
 
 #header .countdown {
@@ -113,7 +97,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #header .countdown div {
   text-align: center;
-  border: 2px solid rgba(255, 255, 255, 0.8);
+  border: 2px solid rgba(0, 0, 0, 0.8);
   border-radius: 8px;
   margin: 10px 10px;
   width: 100px;
@@ -123,7 +107,7 @@ h1, h2, h3, h4, h5, h6 {
 #header .countdown div h3 {
   font-weight: 700;
   font-size: 32px;
-  margin-bottom: 15px;
+  margin-bottom: 1px;
 }
 
 #header .countdown div h4 {
@@ -152,10 +136,30 @@ h1, h2, h3, h4, h5, h6 {
   text-align: center;
 }
 
+#header .text4 {
+  font-size: 15px;
+  text-align: center;
+}
+
+#header .text1 {
+  font-size: 15px;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+
+#header .text22
+  font-size: 15px;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
 #header .subscribe h4 {
   font-size: 20px;
   font-weight: 600;
-  color: #fff;
+  color: 000000;
   position: relative;
   padding-bottom: 12px;
 }
@@ -163,7 +167,7 @@ h1, h2, h3, h4, h5, h6 {
 #header .subscribe .subscribe-form {
   min-width: 100px;
   margin-top: 10px;
-  background: #fff;
+  background: #1335f1;
   padding: 6px 10px;
   position: relative;
   border-radius: 50px;
@@ -255,7 +259,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #header .social-links a {
   font-size: 16px;
-  color: #fff;
+  color: #1335f1;
   margin: 0 3px;
   border-radius: 50%;
   width: 48px;
@@ -401,7 +405,7 @@ h1, h2, h3, h4, h5, h6 {
 * Mobile Navigation
 */
 .mobile-nav-toggle {
-  color: #314759;
+  color: #000000;
   font-size: 28px;
   cursor: pointer;
   display: none;
@@ -410,7 +414,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .mobile-nav-toggle.bi-x {
-  color: #fff;
+  color: #000000;
 }
 
 @media (max-width: 991px) {
@@ -448,7 +452,7 @@ h1, h2, h3, h4, h5, h6 {
   left: 15px;
   padding: 10px 0;
   border-radius: 10px;
-  background-color: #fff;
+  background-color: #000000;
   overflow-y: auto;
   transition: 0.3s;
 }
@@ -555,7 +559,7 @@ section {
 }
 
 .about .icon i {
-  color: #fff;
+  color: #000000;
   font-size: 42px;
   line-height: 0;
 }
@@ -568,7 +572,7 @@ section {
 }
 
 .about .title a {
-  color: #fff;
+  color: #000000;
   transition: 0.3s;
 }
 
@@ -763,7 +767,7 @@ section {
 #footer {
   background: rgba(38, 55, 69, 0.4);
   padding: 30px 0;
-  color: #fff;
+  color: #000000;
   font-size: 14px;
   position: relative;
 }
